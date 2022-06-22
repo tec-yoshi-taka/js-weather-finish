@@ -93,7 +93,7 @@ h1 {
     .graph-area, .forecast{
         display: none;
     }
-    .current .weather-icon img{
+    /* .current .weather-icon img{
         width: 100%;
         height: auto;
     }
@@ -103,5 +103,5 @@ h1 {
     }
     .current .current-date{
         font-size: 1.5rem;
-    }
+    } */
 }
