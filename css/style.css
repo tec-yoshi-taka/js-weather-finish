@@ -90,4 +90,7 @@ h1 {
     .current {
         margin-bottom: 20px;
     }
+    .graph-area{
+        display: none;
+    }
 }
