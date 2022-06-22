@@ -93,4 +93,15 @@ h1 {
     .graph-area, .forecast{
         display: none;
     }
+    .current .weather-icon img{
+        width: 100%;
+        height: auto;
+    }
+    .current .current-temp{
+        font-size: 3rem;
+        margin-bottom: 62px;
+    }
+    .current .current-date{
+        font-size: 1.5rem;
+    }
 }
