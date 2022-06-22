@@ -90,7 +90,7 @@ h1 {
     .current {
         margin-bottom: 20px;
     }
-    .graph-area, .forecast{
+    .graph-area{
         display: none;
     }
     /* .current .weather-icon img{
