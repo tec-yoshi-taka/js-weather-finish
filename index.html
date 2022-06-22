@@ -52,7 +52,7 @@
         const current_view = (data) => {
             crnt_city.innerHTML = `<h1>${data.name}の天気予報</h1>`;
             crnt_icon.innerHTML =
-                `<img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="">`;
+                `<img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="">`;
             crnt_temp.innerHTML = `${Math.round(data.main.temp)}℃`;
             crnt_date.innerHTML = dateFormat();
         };
