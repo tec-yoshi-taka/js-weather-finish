@@ -140,12 +140,12 @@
                 const date = new Date();
                 date.setHours(date.getHours());
                 month = date.getMonth() + 1;
-                let day = month + "月" + date.getDate() + "日" + week[date.getDay()] + date.getHours() + "：" + date
-                    .getMinutes();
+                let day = month + "月" + date.getDate() + "日" + week[date.getDay()] + date.getHours() + "：" + date.getMinutes();
                 return day;
             } else {
                 const day = [];
-                const date = new Date(d);
+                const date = new Date(d.replace(/-/g,"/"));
+                // const date = new Date(d);
                 date.setHours(date.getHours() + 9);
                 month = date.getMonth() + 1;
                 day[0] = month + "月" + date.getDate() + "日" + week[date.getDay()];
