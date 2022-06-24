@@ -21,6 +21,9 @@
             <div class="current-temp"></div>
             <div class="current-date"></div>
         </div>
+
+        <div class="json"></div>
+
         <!-- 天気予報の表示  -->
         <div class="forecast"></div>
         <!-- 気温のグラフ -->
@@ -37,6 +40,7 @@
         const crnt_temp = document.querySelector('.current .current-temp');
         const crnt_date = document.querySelector('.current .current-date');
         const forecast = document.querySelector('.forecast');
+        const json_d = document.querySelector('.json');
         let oldDate = '';
         let newDate = '';
 
@@ -58,6 +62,7 @@
         };
         //天気予報 HTML
         const forecast_view = (data) => {
+            json_d.innerHTML = data;
             let html = '';
             for (let i = 0; i <= 39; i += 1) {
                 const day = dateFormat(data.list[i].dt_txt);
