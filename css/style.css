@@ -6,7 +6,7 @@ body {
 
 .wrapper {
     width: 800px;
-    margin: 70px auto 0;
+    margin: 30px auto 0;
 }
 
 h1 {
@@ -69,6 +69,44 @@ h1 {
     border: 1px dashed rgba(255, 255, 255, 0.856);
     padding: 10px 0;
 }
+.selectbox {
+    width:30%;
+    margin:1em auto;
+    position:relative;
+    color: cadetblue;
+}
+select{
+    -webkit-appearance:none;
+    appearance:none;
+    width:100%;
+    padding:1em 1em;
+    box-sizing:border-box;
+    font-size:1em;
+    border:#ccc 1px solid;
+    border-radius:0;
+    background:#fff;
+}
+.selectbox::after{
+    content:"";
+    display:block;
+    width:10px;
+    height:10px;
+    position:absolute;
+    right:5%;
+    top:35%;
+    border-bottom:#333 2px solid;
+    border-right:#333 2px solid;
+    transform:rotate(45deg)translateY(-30%);
+}
+.color.selectbox select{
+    background:blue;
+    color:#fff;
+    border-radius:2em;
+}
+.color.selectbox::after{
+    border-bottom:#fff 5px solid;
+    border-right:#fff 5px solid;
+}
 
 @media screen and (max-width: 828px) {
     .wrapper {
@@ -92,6 +130,9 @@ h1 {
     }
     .graph-area{
         display: none;
+    }
+    .selectbox {
+        width:80%;
     }
     /* .current .weather-icon img{
         width: 100%;
